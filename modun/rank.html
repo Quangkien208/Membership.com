@@ -1,0 +1,124 @@
+<div class="wheel" id="wheel"> 
+  <svg id="rotate" class="whel-body" viewBox="-305 -305 610 610" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="transform: rotate(0turn);"> 
+ 
+    <g transform="rotate(0)" data-tip="Vàng x200" currentItem="false"> 
+      <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/hom_vang.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image> 
+      <text x="-14.924653862238502" y="-138.581929876693">x1600</text></g> 
+    <g transform="rotate(45)" data-tip="Vàng x400" currentItem="false"> 
+      <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/hom_vang.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image> 
+      <text x="-14.924653862238502" y="-138.581929876693">x2000</text> 
+    </g> 
+    <g transform="rotate(90)" data-tip="Vàng x600" currentItem="false"> 
+        <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+        <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/hom_vang.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image> 
+        <text x="-14.924653862238502" y="-138.581929876693">x16</text> 
+    </g> 
+    <g transform="rotate(135)" data-tip="Hòm mảnh nhân vật 2 x2" currentItem="false"> 
+      <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/hop_manh_nhan_vat.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image><text x="-14.924653862238502" y="-138.581929876693">x56</text> 
+    </g> 
+    <g transform="rotate(180)" data-tip="Máy quét x7" currentItem="false"> 
+      <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/may_quet.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image> 
+      <text x="-14.924653862238502" y="-138.581929876693">x56</text> 
+    </g> 
+    <g transform="rotate(225)" data-tip="Lửa trại x7" currentItem="false"><path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/lua_trai.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image> 
+      <text x="-14.924653862238502" y="-138.581929876693">x16</text> 
+    </g> 
+    <g transform="rotate(270)" data-tip="Vé quay kim cương x2" currentItem="false"><path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/ve_quay_kc.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image><text x="-14.924653862238502" y="-138.581929876693">x4800</text> 
+    </g> 
+    <g transform="rotate(315)" data-tip="Kim cương x250" currentItem="false"> 
+      <path d="M0,0 L-114.80502970952693,-277.163859753386 A300 300 0 0 1 114.80502970952693,-277.163859753386 Z"></path> 
+      <image xlink:href="https://cdn.vn.garenanow.com/web/ff/ff_membership/item/kim_cuong.png" x="-45.922011883810775" y="-249.44747377804742" height="86.1037722821452" width="86.1037722821452"></image>
+      <text x="-14.924653862238502" y="-138.581929876693">x3200</text> 
+    </g> 
+ 
+    <filter id="grayscale"><feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"></feColorMatrix></filter> 
+  </svg> 
+ 
+<img class="mock act-btn" src="https://ff.member.garena.vn/images/spin-arrow.png" id="quay" style="margin-top:-9px;"> 
+</div> 
+<script type="text/javascript"> 
+ 
+$( document ).ready(function() { 
+ 
+    let tick = new Audio('/sounds/tick.mp3'); 
+    let success = new Audio('/sounds/success.mp3'); 
+    let error = new Audio('/sounds/error.mp3');    
+ 
+  function playSound(type) { 
+      if(type == "success") { 
+        success.pause(); 
+        success.currentTime = 0; 
+        success.play(); 
+      }else if(type == "error") { 
+        error.pause(); 
+        error.currentTime = 0; 
+        error.play(); 
+      }else if(type == "tick") { 
+        tick.pause(); 
+        tick.currentTime = 0; 
+        tick.play(); 
+      }else { 
+        success.pause(); 
+        error.pause(); 
+        tick.pause(); 
+      } 
+  } 
+    var bRotate = false; 
+ 
+    $('#quay').click(function (){ 
+ 
+               if(bRotate)return; 
+$.ajax({  
+        type: 'post',  
+        dataType: "JSON", 
+        url: '/modun/quay.php',  
+        data: { 
+          'rank': 'bachkim' 
+        },  
+        success: function (json) { 
+ 
+        bRotate = !bRotate; 
+ 
+ 
+if(json.status == 3) { 
+   VDL("Lỗi!", "Vui lòng đăng nhập để quay!");         
+          }else if(json.status == 4) { 
+   VDL("Lỗi!", "Bạn Không Đủ Lượt Quay, Vui Lòng Nạp Thêm Tiền");   
+    setTimeout(function(){window.location.href = '';}, 2000); 
+          }else if(json.status == 1) { 
+            if(json.item > 0 && json.item < 9) { 
+        playSound("tick"); 
+        $('#rotate').rotate({ 
+            angle:0, 
+            animateTo:json.location+1800, 
+            duration:10000, // tốc độ quay tay 
+            callback:function (){ 
+              playSound("success"); 
+              VDL("Thông Báo!", json.mess); 
+                bRotate = !bRotate; 
+            } 
+        }); 
+ 
+}else { 
+  VDL("Lỗi!", "Lỗi hệ thống!");  
+} 
+ 
+          }else if(json.status == 403) { 
+              VDL("Lỗi!", json.mess); 
+ 
+          }else { 
+   VDL("Lỗi!", "Lỗi hệ thống!");             
+          } 
+     } 
+  }); 
+    }); 
+ 
+}); 
+ 
+</script>
